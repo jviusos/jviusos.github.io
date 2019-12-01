@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Juan Viu-Sos | IMPA - Instituto de Matemática Pura e Aplicada</title>
+<link rel="stylesheet" href="miestilo.css" type="text/css" >
+<script type="text/javascript">
+function setH() {
+   var maxH = Math.max(document.getElementById('colum1').offsetHeight,document.getElementById('colum2').offsetHeight);
+   document.getElementById('colum1').style.height=maxH+'px';
+   document.getElementById('colum2').style.height=maxH+'px';
+   }
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.text_container').addClass("hidden");
+
+        $('.text_container').click(function() {
+            var $this = $(this);
+
+            if ($this.hasClass("hidden")) {
+                $(this).removeClass("hidden").addClass("visible");
+
+            } else {
+                $(this).removeClass("visible").addClass("hidden");
+            }
+        });
+    });
+</script>
+<script src="/media/system/js/mootools-core.js" type="text/javascript"></script>
+<script src="/media/system/js/core.js" type="text/javascript"></script>
+<script src="/media/system/js/caption.js" type="text/javascript"></script>
+<script type="text/javascript">
+window.addEvent('load', function() {
+			new JCaption('img.caption');
+		});
+</script>
+</style></head>
+
+<! ----------------------------- MENU ----------------------------- >
+<body  onload="setH()">
+<div id="contenedor">
+<div id="cabecera"></div>
+	<div id="menu">
+	<ul>
+		<li><a href="indexFr.html"		> Accueil </a></li>
+        <li><a href="researchFr.html"   > Recherche </a></li>
+        <li><a href="talksFr.html"	    > Exposés </a></li>
+        <li><a href="teachingFr.html"	> Enseignement </a></li>
+        <li><a href="sageFr.html"  		> Sagemath </a></li>
+		<li><a href="contactFr.html"  	> Contact </a></li>
+    	<li><p>&nbsp;</p></li>
+	</ul>
+	<!- Alt: poner las banderucas aqui, "center" ->
+	</div>
+
+
+<! ----------------------------- BODY ----------------------------- >
+<div id="colum2">
+	<div class="contenido">
+	<div id="pie" align="right">
+  			<a href="research.html"> <img src="pictures/gb.png" title="English" alt="English"> </a>
+			<a href="researchFr.html"> <img src="pictures/fr.png" title="Français" alt="Français"> </a>
+			<a href="researchEs.html"> <img src="pictures/es.png" title="Español" alt="Español"> </a>  
+            <a href="research.html"> <img src="pictures/br.png" title="Português" alt="Português"> </a> </div>
+	<h2>Recherche</h2>
+
+<div><h3>(Pre)publications</h3>
+<ol reversed>
+    <li>  <b>Motivic zeta functions on $\mathbb{Q}$-Gorenstein varieties </b> (avec E. León-Cardenal, J. Martín-Morales & W. Veys). <br>
+	<p class="sub"> (<i>Soumis</i>), <a href="https://arxiv.org/abs/1911.03354" target="_blank"> arXiv:1911.03354 <img src="pictures/pdf-icon.png" height=16px title="Pdf" alt="Pdf"></a>.</p>
+    <div class="text_container">
+    <div class="text_container">
+    <div class="vis">Résumé↴</div>
+    <div class="hid">
+    <p> Nous étudions les fonctions zêta motiviques pour des $\mathbb{Q}$-diviseurs dans une variété $\mathbb{Q}$-Gorenstein. En utilisant une résolution torique partielle, nous réduisons cet étude dans le cas local de deux diviseurs à croisements normaux  où l'espace ambiance est une singularité quotients. Pour cela, nous obtenons une formule explicite qui s'applique directement sur la variété singulier quotient. Comme une première application, nous présentons une famille de singularités de surface où l'utilisation des éclatements à poids réduisent drastiquement l'ensemble des candidates à pole. Nous présentons aussi un exemple de de singularité quotient sur l'action d'un groupe non-abélien, pour qui nous calculons quelques invariants de nature motivique une fois une $\mathbb{Q}$-résolution est construite.</p>
+    </div>
+    </div>
+    </li>
+
+
+    <li> <b>Ineffectiveness of homotopical invariants on Nakanishi's 4-move conjecture </b> (avec B. Guerville-Ballé). <br>
+	<p class="sub"> (<i>Preprint</i>), <a href="https://arxiv.org/abs/1808.05518" target="_blank"> arXiv:1808.05518 <img src="pictures/pdf-icon.png" height=16px title="Pdf" alt="Pdf"></a>. </p>
+    <div class="text_container">
+    <div class="vis">Résumé↴</div>
+    <div class="hid">
+    <p>Un 4-movement est une opération locale pour noeuds et entrelacs qui consiste à remplacer deux arcs parallèles par quatre "half twists". À l’heure actuelle, il n'est pas connu si cela induit une opération de dénouement sur les noeuds. En étudiant l'invariant de Dabkowski-Sahi, nous prouvons que quelque soit l'invariant de noeuds qui soit basée sur le groupe fondamental $\pi_1(S^3\setminus K)$ et préservé par le 4-mouvement est constant entre les classes d'isotopie des noeuds.</p>
+    </div>
+    </div>
+    </li>
+
+
+    <li> <b>Fundamental groups of real arrangements and torsion in the lower central series quotients </b> (avec E. Artal & B. Guerville-Ballé). <br>
+	<p class="sub"> <i>Experimental Mathematics</i> (2018), <a href="http://www.tandfonline.com/doi/full/10.1080/10586458.2018.1428131" target="_blank"> journal <img src="pictures/pdf-icon.png" height=16px title="Html" alt="Html"></a>, <a href="https://arxiv.org/abs/1704.04152" target="_blank"> arXiv:1704.04152 <img src="pictures/pdf-icon.png" height=16px title="ArXiv" alt="ArXiv"></a>.</p>
+    <div class="text_container">
+    <div class="vis">Résumé↴</div>
+    <div class="hid">
+    <p>Nous prouvons que le groupe fondamental du complémentaire d'un arrangement de droites réel complexifié n'est pas déterminé par son treillis d'intersection, donnant un contre-exemple à un problème de Falk et Randell. Nous en déduisons aussi que la torsion dans les quotients des séries centrales descendantes ne sont pas déterminés combinatoirement, ce qui donne une réponse négative à une question de Suciu. </p>
+    </div>
+    </div>
+    </li>
+
+
+    <li> <b>Configurations of points and topology of real line arrangements </b> (avec B. Guerville-Ballé). <br>
+	<p class="sub"> <i>Mathematische Annalen 374 (2019), no. 1-2, 1–35.</i> <a href="https://link.springer.com/article/10.1007/s00208-018-1673-0" target="_blank"> journal <img src="pictures/pdf-icon.png" height=16px title="Html" alt="Html"></a>, <a href="https://arxiv.org/abs/1702.00922" target="_blank"> arXiv:1702.00922 <img src="pictures/pdf-icon.png" height=16px title="ArXiv" alt="ArXiv"></a>, contenant deux appendices avec plusieurs dessins detaillés des paires de Zariski.</p>
+    <div class="text_container">
+    <div class="vis">Résumé↴</div>
+    <div class="hid">
+    <p>Une question centrale dans l'étude des arrangements de droites dans le plan projectif complexe $\mathbb{CP}^2$ est : quand la combinatoire d'un arrangement détermine-t-elle ses propriétés topologiques ? Dans le présent papier, nous introduisons un invariant topologique des arrangements des droites réels compléxifiés : le poids de la chambre (chamber weigth). Cet invariant est basé sur le calcul du poids des points, de la configuration duale de l'arrangement, situés dans une région particulière du plan projectif réel $\mathbb{RP}^2$ ; et ce, en ne travaillant qu'avec des propriétés géométriques.</p>
+    <p>En utilisant ce point de vu dual, nous construisons plusieurs exemples d'arrangements réels compléxifiés ayant les même combinatoires et diffèrent plongements dans le plan projectif complexe  $\mathbb{CP}^2$ (i.e. des paires de Zariski), qui sont distingués par cet invariant. En particulier, nous obtenons des paires avec 13, 15 et 17 droites définies sur $\mathbb{Q}$ et contenant uniquement des points doubles et triples. Pour chacune d'elles, nous construisons des dégénérations contenant des points de multiplicité 2, 3 et 5, qui sont également des paires de Zariski.</p>
+    <p>Nous calculons explicitement l'espace des réalisations de la combinatoire de l'un de ces exemples et prouvons qu'il est formé de 2 composantes connexes. Nous obtenons également trois caractérisations géométriques de ces composantes: l'existence de deux coniques lisses, l'une tangente à 6 droites et l'autre contenant six point triples, ainsi que la colinéarité de 3 points triples. </p>
+    </div>
+    </div>
+    </li>
+
+   <li> <b>A semi-canonical reduction for periods of Kontsevich-Zagier </b> <br>
+	<p class="sub"> (<i>Soumis</i>), <a href="http://arxiv.org/abs/1509.01097" target="_blank"> arXiv:1509.01097 <img src="pictures/pdf-icon.png" height=16px title="Pdf" alt="Pdf"></a>. </p>
+    <div class="text_container">
+    <div class="vis">Résumé↴</div>
+    <div class="hid">
+    <p>La ${\overline{\mathbb Q}}$-algèbre des périodes fut introduite par Kontsevich et Zagier comme les nombres complexes dont les parties réelle et imaginaire sont valeurs d'intégrales absolument convergentes de fonctions ${\mathbb Q}$-rationnelles sur des domaines ${\mathbb Q}$-semi-algébriques dans ${\mathbb R}^d$. La conjecture des périodes de Kontsevich-Zagier affirme que si une période admet deux représentations intégrales, alors elles sont reliées par une suite finie d'opérations en utilisant uniquement trois règles respectant la rationalité des fonctions et domaines : sommes d'intégrales par intégrandes ou domaines, changement de variables et formule de Stokes.</p>
+    <p>Dans cet article, nous démontrons que toute période réelle non nulle peut être représentée comme le volume d'un ensemble ${\overline{\mathbb Q}}\cap{\mathbb R}$-semi-algébrique compact, obtenu à partir de n'importe quelle représentation intégrale via un algorithme effectif en respectant les règles permises par la conjecture des périodes de Kontsevich-Zagier.</p>
+    </div>
+    </div>
+    </li>
+
+    <li> <b>Combinatorics of line arrangements and dynamics of polynomial vector fields </b> (avec B. Guerville-Ballé). <br>
+	<p class="sub"> (<i>Soumis</i>), <a href="http://arxiv.org/abs/1412.0137" target="_blank"> arXiv:1412.0137 <img src="pictures/pdf-icon.png" height=16px title="ArXiv" alt="ArXiv"></a>. </p>
+    <p style="margin: 0px 0px 0px 0px"><a href="pub/combinatorics_vector_fields_appendix.zip" target="_blank"> Appendice <img src="pictures/zip-icon.png" height=16px title="Appendice" alt="Appendice"></a> </p>
+    <div class="text_container">
+    <div class="vis">Résumé↴</div>
+    <div class="hid">
+    <p>Soit $\mathcal{A}$ un arrangement de droites réelles et $\mathcal{D}(\mathcal{A})$ le module des $\mathcal{A}$–dérivations. Premièrement, on donne un interprétation de $\mathcal{D}(\mathcal{A})$ comme l’ensemble des champs de vecteurs polynomiaux possédant $\mathcal{A}$ comme ensemble invariant. Nous caractérisons les champs possédant une infinité de droites invariantes. Ensuite, nous démontrons que le degré minimal des éléments de $\mathcal{D}(\mathcal{A})$ laissant invariant uniquement un nombre fini de droites n'est pas déterminé par la combinatoire de $\mathcal{A}$.</p>
+    </div>
+    </div>
+    </li>
+
+    <li> <b>On the minimal degree of logarithmic vector fields of line arrangements </b> (avec B. Guerville-Ballé). <br>
+	<p class="sub"> <i>Proc. XIII Intern. Conf. on Maths. and its Appl., (40), 61-66 (2016)</i>, <a href="http://pcmap.unizar.es/~jaca2016/PDFXIII_2/guerville.pdf" target="_blank"> journal <img src="pictures/pdf-icon.png" height=16px title="Pdf" alt="Pdf"></a>. </p>
+    </li><br>
+
+</ol> </div><br><br><br>
+
+
+
+<div><h3>Séminaires et mini-cours dispensés</h3>
+<ul class="articles">
+    <li>  <b>An introduction to $p$-adic and motivic integration, zeta functions and new stringy invariants of singularities. </b>  Mini-cours de 20h à l'ICMC-USP. <br>
+&emsp; &emsp; &emsp; <a href="resources/motivic_integration.pdf" target="_blank"> Notes <img src="pictures/pdf-icon.png" height=16px title="Pdf" alt="Pdf"></a> (Dernière mise-à-jour: 16-11-18)</li><br>
+
+    <li>  <b>Line arrangements: combinatorics, geometry and topology. </b>  Mini-cours introductif de 7h à l'ICMC-USP.</li>
+</ul> </div><br><br><br>
+
+<!--
+<div><h3>En préparation</h3>
+<ul class="articles">
+    <li> <i>"On the equality of periods of Kontsevich-Zagier"</i>, avec <a href="http://web.univ-pau.fr/~jcresson/" target="_blank"> J. Cresson </a>.</li>
+
+    <li> <i>"Constructing Zariski pairs of line arrangements with given sub-combinatorics."</i>, avec <a href="http://www.benoit-guervilleballe.com" target="_blank"> B. Guerville-Ballé</a>. </li>
+
+    <li> <i>"Decibability and 0-recognition problem for periods of Kontsevich-Zagier."</i>, avec <a href="http://www.math.sci.hokudai.ac.jp/~yoshinaga/" target="_blank"> M. Yoshinaga</a>. </li>
+
+	<li> <i>"On Kontsevich-Zagier periods."</i>, with <a href="http://web.univ-pau.fr/~jcresson/" target="_blank"> J. Cresson </a>. </li>
+</ul> </div><br><br><br>
+-->
+
+
+<div><h3>Thèse</h3>
+<ul class="articles">
+    <li> <a href="http://www.theses.fr/2015PAUU3022" target="_blank"> <b>Periods and line arrangements: contributions to the Kontsevich-Zagier periods conjecture and to the Terao conjecture</b> <img src="pictures/pdf-icon.png" height=16px title="Pdf" alt="Pdf"></a> dans <a href="http://www.univ-pau.fr/" target="_blank">Université de Pau et des Pays de l'Adour</a> (France) et <a href="http://www.univ-pau.fr/" target="_blank">Universidad de Zaragoza</a> (Espagne).<br>
+    <ul class="articles">
+        <li> Directeurs de thèse: <a href="http://web.univ-pau.fr/~jcresson/" target="_blank"> Jacky Cresson</a>, <a href="http://riemann.unizar.es/geotop/WebGeoTo/Profes/eartal/" target="_blank"> Enrique Artal</a> et <a href="http://riemann.unizar.es/geotop/pub/vincent/" target="_blank"> Vincent Florens</a>.</li>
+
+        <li> Rapporteurs: <a href="http://www.ihes.fr/~cartier/" target="_blank"> Pierre Cartier</a>, <a href="http://math.univ-angers.fr/~granger" target="_blank"> Michel Granger</a> et <a href="http://www.math.sci.hokudai.ac.jp/~yoshinaga/" target="_blank"> Masahiko Yoshinaga</a>.</li>
+
+        <li> Jury: <a href="http://www.ihes.fr/~cartier/" target="_blank"> Pierre Cartier</a>, <a href="http://webusers.imj-prg.fr/~michel.waldschmidt/index2.html" target="_blank"> Michel Waldschmidt</a>, <a href="http://homepages.warwick.ac.uk/~masbm/" target="_blank"> David Mond</a>, <a href="http://www.unilim.fr/pages_perso/jacques-arthur.weil/" target="_blank"> Jacques-Arthur Weil</a> et <a href="http://web.univ-pau.fr/~jvalles/" target="_blank"> Jean Vallès</a>.</li>
+    </ul>  </li>
+</u1></div><br><br><br>
+
+
+
+<div><h3>Autres</h3>
+<ul class="articles">
+	<li> <a href="resources/sage/JViuSos-ZetaFunctions.pdf" target="_blank"> <b>Funciones zeta y poliedros de Newton: Aspectos teóricos y computacionales </b> <img src="pictures/pdf-icon.png" height=16px title="Pdf (Spanish)" alt="Pdf (Spanish)"></a> Mémoire de master dans l'Université de Saragosse sous la direction de E. Artal. </li><br>
+</ul> </div>
+<br>
+</div>
+</div>
+
+<div>
+<p>&nbsp;<br>&nbsp;<br></p>
+</div>
+</body>
+</html>
