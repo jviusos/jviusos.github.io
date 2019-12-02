@@ -12,12 +12,14 @@ function setH() {
    }
 </script>
 <script type="text/x-mathjax-config">
+  //
+  //  Configure MathJax
+  //
   MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
+    extensions: ["tex2jax.js","TeX/noUndefined.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]},
+    TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}
 </script>
 <script type="text/javascript"
   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
@@ -53,7 +55,7 @@ function setH() {
 	<h2>Juan Viu-Sos</h2>
 <a href="pictures/foto_pizarra.jpg"> <img src="pictures/foto.jpg" align="right" height=190px style="border-right:10px solid #F5F5F5; border-left:20px solid #F5F5F5; border-bottom:10px solid #F5F5F5;"></a>
 
-	<b>Ph.D in Mathematics,</b> currently in a post-doc position at <a href="https://impa.br/" target="_blank">IMPA - Instituto de Matemática Pura e Aplicada</a> (Rio de Janeiro, Brazil) with a <a href="https://www.capes.gov.br/" target="_blank">CAPES/PNPD</a> grant.<br>
+	<b>Ph.D in Mathematics,</b> currently in a post-doc position at <a href="https://impa.br/" target="_blank">IMPA - Instituto de Matemática Pura e Aplicada</a> (Rio de Janeiro, Brazil) with a <a href="https://www.capes.gov.br/" target="_blank">CAPES/PNPD</a> grant. $x^2-y^2$ $\mathbb{Q}$<br>
 <br>
 
 <a href="pictures/hairy_ball_thm.png"> <img src="pictures/Milnor_fiber_8.png" align="left" height=150px style="border-right:10px solid #F5F5F5"></a>
