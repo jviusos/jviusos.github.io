@@ -54,7 +54,7 @@ a{
 
 
 ol {
-	counter-reset: o-counter 8; /*Num total de articulos*/
+	counter-reset: o-counter 9; /*Num total de articulos*/
 	list-style-type: none;
     text-indent: 0px;
     margin-left: 40px;
