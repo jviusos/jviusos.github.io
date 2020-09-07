@@ -18,13 +18,13 @@
 body,th, td {
 	font-size: 13px;
     background-color: #93B1C6;
-    background-image: url("back2.png");
+    background-image: url("back3.png");
     background-repeat: repeat;
     background-attachment: scroll;
     background-position: 0% 0%;
     background-clip: border-box;
     background-origin: padding-box;
-    background-size: 5%; /*auto auto*/
+    background-size: 300px 150px; /*auto auto*/
 }
 
 body{
@@ -123,18 +123,19 @@ p.abs {
 #main{
 	float:left;
 	width:1000px;
-	background-color: #f2f3ec;
+	background-color: #F5F5F5; /*#f2f3ec*/
 	}
 
 #main .contenido{
 	display:block;
 	padding:1em;
-	text-indent:15px;
+	text-indent:0px;
 	font-family:  Helvetica, sans-serif; /*Tahoma, Geneva, sans-serif; */ /* sans-serif, Courier New*/
 	font-size: 14px;
 	color: #393B3D;
 	overflow:auto;
     min-height: 250px;
+    padding: 25px 25px 25px 25px;
 	}
 
 #main h1{
