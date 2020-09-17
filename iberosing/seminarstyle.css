@@ -273,19 +273,29 @@ table.hor-zebra>thead>tr>th {
 }
 
 table.hor-zebra>tbody>tr>td {
-  background: #f3f3f3;
+  background: #f3f3f3;/*f3f3f3*/
   border-bottom: #cccccc 1px solid;
   padding: 8px 4px 8px 8px;
   vertical-align: top;
 }
 
 table.hor-zebra>tbody>tr>td.odd {
-  background: #f8f8f8;
+  background: #f8f8f8;/*f8f8f8*/
+  border-bottom: #cccccc 1px solid;
+}
+
+table.hor-zebra>tbody>tr>td.special {
+  background: #f3f3f3;/*e4e5f8*/
+  border-bottom: #cccccc 1px solid;
+}
+
+table.hor-zebra>tbody>tr>td.special-odd {
+  background: #f8f8f8;/*ebedf6*/
   border-bottom: #cccccc 1px solid;
 }
 
 table.hor-zebra>tbody>tr:hover td {
-  background: #faf4f2;
+  background: #faf4f2;/*faf4f2*/
 }
 
 
