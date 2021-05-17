@@ -360,6 +360,10 @@ knitr::opts_chunk$set(echo = TRUE)
 ```-->
 <!--CONFIGURACION DE PAGINA-->
 <style type="text/css">
+body {
+    background-color: #FCFCFC;
+}
+
 /* Define a margin before h1 element */
 h1  {
   margin-top: 2em;
@@ -371,12 +375,74 @@ h2  {
   margin-top: 2em;
 }
 
+/* Define a margin before h2 element */
+h3 {
+  margin-top: 1em;
+}
+
 /* Define a margin after every first p elements */
 p:first-of-type {
-  margin-bottom: 3em;
+  margin-bottom: 1em;
 }
 </style>
 <hr />
+<div id="plan-10s-x-30mins-1-2-charlas" class="section level1 unnumbered">
+<h1 class="unnumbered">Plan (10s x 30mins + 1-2 charlas)</h1>
+<ol style="list-style-type: decimal">
+<li>Introducción Rkward
+<ul>
+<li>Datos:
+<ol style="list-style-type: decimal">
+<li>Algo básico con pocos valores y mezclando variables (Among us? Deporte?)</li>
+</ol></li>
+</ul></li>
+<li>Estadística básica y gráficas básicas
+<ul>
+<li>Datos:
+<ol style="list-style-type: decimal">
+<li>Among us</li>
+<li>Airbnb-Madrid</li>
+<li>…</li>
+</ol></li>
+</ul></li>
+<li>Covarianzas y regresiones (lineal, exponencial, logarítmica), transfromaciones de datos.
+<ul>
+<li>Datos:
+<ol style="list-style-type: decimal">
+<li>Datos industriales</li>
+<li>Datos biológicos</li>
+<li>¿Experimento en casa? (tiempo vs…)</li>
+</ol></li>
+</ul></li>
+<li>Probabilidades y variables aleatorias
+<ul>
+<li>Generar datos y dataframes.</li>
+<li>Contrastar con distribuciones teóricas</li>
+<li>Teorema Central del Límite.</li>
+</ul></li>
+<li>Contraste de hipótesis
+<ul>
+<li>Industriales</li>
+<li>Paqueterias</li>
+<li>…</li>
+</ul></li>
+<li>IDEAS:
+<ul>
+<li>Colocar mapa + buscar provincia o región a partir de las coordenadas. [USAR ESTO PARA EMPEZAR LINEA DE CODIGOS Y SCRIPTS ]
+<ul>
+<li>colorear según barrio (Airbnb Madrid)</li>
+</ul></li>
+<li>Youtube, Netflix</li>
+<li>Hidrocosas</li>
+<li>Combustigles</li>
+<li>Energias.</li>
+<li>Control de calidad</li>
+<li>¿Teoria de grafos con modelos de distribución ing. civil?</li>
+<li>¿Análisis de sentimientos?</li>
+</ul></li>
+</ol>
+<hr />
+</div>
 <div id="introducción-datos-de-among-us" class="section level1" number="1">
 <h1 number="1"><span class="header-section-number">1</span> Introducción (datos de Among us?) <!--{.tabset}--></h1>
 <div id="el-lenguaje-r" class="section level2" number="1.1">
@@ -409,7 +475,44 @@ p:first-of-type {
 <p><del>The world is flat.</del> We now know that the world is round.<span class="math inline">\(\int_X f(x)\ \text{d}\mu\)</span></p>
 </div>
 <div id="para-practicar" class="section level2" number="1.5">
-<h2 number="1.5"><span class="header-section-number">1.5</span> Para practicar <svg style="height:0.8em;top:.04em;position:relative;fill:steelblue;" viewBox="0 0 512 512"><path d="M139.61 35.5a12 12 0 0 0-17 0L58.93 98.81l-22.7-22.12a12 12 0 0 0-17 0L3.53 92.41a12 12 0 0 0 0 17l47.59 47.4a12.78 12.78 0 0 0 17.61 0l15.59-15.62L156.52 69a12.09 12.09 0 0 0 .09-17zm0 159.19a12 12 0 0 0-17 0l-63.68 63.72-22.7-22.1a12 12 0 0 0-17 0L3.53 252a12 12 0 0 0 0 17L51 316.5a12.77 12.77 0 0 0 17.6 0l15.7-15.69 72.2-72.22a12 12 0 0 0 .09-16.9zM64 368c-26.49 0-48.59 21.5-48.59 48S37.53 464 64 464a48 48 0 0 0 0-96zm432 16H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"></path></svg></h2>
+<h2 number="1.5"><span class="header-section-number">1.5</span> Para practicar <svg style="height:0.8em;top:.04em;position:relative;fill:steelblue;" viewBox="0 0 512 512"><path d="M139.61 35.5a12 12 0 0 0-17 0L58.93 98.81l-22.7-22.12a12 12 0 0 0-17 0L3.53 92.41a12 12 0 0 0 0 17l47.59 47.4a12.78 12.78 0 0 0 17.61 0l15.59-15.62L156.52 69a12.09 12.09 0 0 0 .09-17zm0 159.19a12 12 0 0 0-17 0l-63.68 63.72-22.7-22.1a12 12 0 0 0-17 0L3.53 252a12 12 0 0 0 0 17L51 316.5a12.77 12.77 0 0 0 17.6 0l15.7-15.69 72.2-72.22a12 12 0 0 0 .09-16.9zM64 368c-26.49 0-48.59 21.5-48.59 48S37.53 464 64 464a48 48 0 0 0 0-96zm432 16H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"></path></svg> <!--{.tabset .tabset-fade }--></h2>
+<div id="ejercicio" class="section level3 tabset tabset-fade tabset-pills" number="1.5.1">
+<h3 class="tabset tabset-fade tabset-pills" number="1.5.1"><span class="header-section-number">1.5.1</span> Ejercicio</h3>
+<div id="enunciado" class="section level4 unnumbered">
+<h4 class="unnumbered">Enunciado</h4>
+<ol style="list-style-type: decimal">
+<li><p>Busca la manera de….</p></li>
+<li><p>Busca la manera de….</p></li>
+</ol>
+</div>
+<div id="solución" class="section level4 unnumbered">
+<h4 class="unnumbered">Solución</h4>
+<ol style="list-style-type: decimal">
+<li><p>Podemos ejecutar…</p></li>
+<li><p>Podemos ejecutar…</p></li>
+</ol>
+</div>
+</div>
+<div id="ejercicio-1" class="section level3 tabset tabset-fade" number="1.5.2">
+<h3 class="tabset tabset-fade" number="1.5.2"><span class="header-section-number">1.5.2</span> Ejercicio</h3>
+<div id="enunciado-1" class="section level4 unnumbered">
+<h4 class="unnumbered">Enunciado</h4>
+<ol style="list-style-type: decimal">
+<li><p>Busca la manera de….</p></li>
+<li><p>Busca la manera de….</p></li>
+</ol>
+</div>
+<div id="solución-1" class="section level4 unnumbered">
+<h4 class="unnumbered">Solución</h4>
+<ol style="list-style-type: decimal">
+<li><p>Podemos ejecutar…</p></li>
+<li><p>Podemos ejecutar…</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="referencias" class="section level2 unnumbered">
+<h2 class="unnumbered">Referencias</h2>
 <hr />
 </div>
 </div>
@@ -449,8 +552,8 @@ p:first-of-type {
 </div>
 <div id="mapas-interactivos-de-datos-parques-eólicos-en-españa" class="section level1" number="3">
 <h1 number="3"><span class="header-section-number">3</span> Mapas interactivos de datos: parques eólicos en España</h1>
-<div id="htmlwidget-b8662c0e2ec041d101cf" style="width:100%;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-b8662c0e2ec041d101cf">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addProviderTiles","args":["OpenStreetMap.Mapnik",null,"OpenStreetMap",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Esri",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addLayersControl","args":[["OpenStreetMap","Esri"],[],{"collapsed":false,"autoZIndex":true,"position":"topright"}]},{"method":"addMarkers","args":[24.462065368316,54.3143914971486,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"El rey emérito",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[40.446789970832,-3.73161252998868,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Aquí está la <b>ETSI de Caminos, Canales y Puertos<\/b>, UPM",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"setView":[[40.446789970832,-3.73161252998868],15,[]],"limits":{"lat":[24.462065368316,40.446789970832],"lng":[-3.73161252998868,54.3143914971486]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-0192be3c5206b1775203" style="width:100%;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0192be3c5206b1775203">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addProviderTiles","args":["OpenStreetMap.Mapnik",null,"OpenStreetMap",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Esri",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addLayersControl","args":[["OpenStreetMap","Esri"],[],{"collapsed":false,"autoZIndex":true,"position":"topright"}]},{"method":"addMarkers","args":[24.462065368316,54.3143914971486,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"El rey emérito",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[40.446789970832,-3.73161252998868,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Aquí está la <b>ETSI de Caminos, Canales y Puertos<\/b>, UPM",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"setView":[[40.446789970832,-3.73161252998868],15,[]],"limits":{"lat":[24.462065368316,40.446789970832],"lng":[-3.73161252998868,54.3143914971486]}},"evals":[],"jsHooks":[]}</script>
 <div id="para-practicar-2" class="section level2" number="3.1">
 <h2 number="3.1"><span class="header-section-number">3.1</span> Para practicar <svg style="height:0.8em;top:.04em;position:relative;fill:steelblue;" viewBox="0 0 512 512"><path d="M139.61 35.5a12 12 0 0 0-17 0L58.93 98.81l-22.7-22.12a12 12 0 0 0-17 0L3.53 92.41a12 12 0 0 0 0 17l47.59 47.4a12.78 12.78 0 0 0 17.61 0l15.59-15.62L156.52 69a12.09 12.09 0 0 0 .09-17zm0 159.19a12 12 0 0 0-17 0l-63.68 63.72-22.7-22.1a12 12 0 0 0-17 0L3.53 252a12 12 0 0 0 0 17L51 316.5a12.77 12.77 0 0 0 17.6 0l15.7-15.69 72.2-72.22a12 12 0 0 0 .09-16.9zM64 368c-26.49 0-48.59 21.5-48.59 48S37.53 464 64 464a48 48 0 0 0 0-96zm432 16H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"></path></svg></h2>
 <hr />
@@ -463,8 +566,8 @@ p:first-of-type {
 <hr />
 </div>
 </div>
-<div id="conjuntos-de-datos-interesantes" class="section level1" number="5">
-<h1 number="5"><span class="header-section-number">5</span> Conjuntos de datos interesantes</h1>
+<div id="conjuntos-de-datos-interesantes" class="section level1 unnumbered">
+<h1 class="unnumbered">Conjuntos de datos interesantes</h1>
 <ol style="list-style-type: decimal">
 <li>Catálogo de datos “Iniciativa de datos abiertos del Gobierno de España”: <a href="https://datos.gob.es/catalogo">https://datos.gob.es/catalogo</a>
 <ul>
