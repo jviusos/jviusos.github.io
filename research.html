@@ -11,17 +11,18 @@ function setH() {
    document.getElementById('colum2').style.height=maxH+'px';
    }
 </script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
+<script>
+window.MathJax = {
+    tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+    },
+    options: {
+        skipHtmlTags: ['script','noscript','style','textarea','pre']
     }
-  });
+};
 </script>
-<script type="text/javascript"
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
 <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
@@ -31,10 +32,13 @@ function setH() {
             var $this = $(this);
 
             if ($this.hasClass("hidden")) {
-                $(this).removeClass("hidden").addClass("visible");
+                $this.removeClass("hidden").addClass("visible");
+                if (window.MathJax && typeof MathJax.typesetPromise === 'function') {
+                    MathJax.typesetPromise([$this.get(0)]).catch(function (err) { console.log('MathJax typeset error:', err); });
+                }
 
             } else {
-                $(this).removeClass("visible").addClass("hidden");
+                $this.removeClass("visible").addClass("hidden");
             }
         });
     });
@@ -47,27 +51,27 @@ window.addEvent('load', function() {
 			new JCaption('img.caption');
 		});
 </script>
-</style></head>
+</head>
 
-<! ----------------------------- MENU ----------------------------- >
+<!-- ----------------------------- MENU ----------------------------- -->
 <body  onload="setH()">
 <div id="contenedor">
 <div id="cabecera"></div>
 	<div id="menu">
-	<ul>
+    <ul>
 		<li><a href="index.html"		> Home </a></li>
         <li><a href="research.html"     > Research </a></li>
         <li><a href="talks.html"	    > Talks </a></li>
         <li><a href="teaching.html" 	> Teaching </a></li>
         <li><a href="sage.html"  		> Sagemath </a></li>
 		<li><a href="contact.html"  	> Contact </a></li>
-    	<li><p>&nbsp;</p></li>
+        <li><p>&nbsp;</p></li>
 	</ul>
-	<!- Alt: poner las banderucas aqui, "center" ->
+    <!-- Alt: poner las banderucas aqui, "center" -->
 	</div>
 
 
-<! ----------------------------- BODY ----------------------------- >
+<!-- ----------------------------- BODY ----------------------------- -->
 <div id="colum2">
 	<div class="contenido">
 	<div id="pie" align="right">
@@ -80,6 +84,16 @@ window.addEvent('load', function() {
 
 <div><h3>(Pre)publications</h3>
 <ol reversed>
+    <li> <b>The Milnor fiber boundary of an arrangement determines its combinatorics</b> (with B. Sigurðsson). <br>
+    <p class="sub"> (<i>Preprint</i>), <a href="https://arxiv.org/abs/2512.05891" target="_blank"> arXiv:2512.05891 <img src="pictures/pdf-icon.png" height=16px title="ArXiv" alt="ArXiv"></a>. </p>
+    <div class="text_container">
+    <div class="vis">Abstract↴</div>
+    <div class="hid">
+    <p>The boundary of the Milnor fiber associated with a complex line arrangement is a three dimensional plumbed manifold, and it is a combinatorial invariant. We prove the reverse implication, which was conjectured Némethi and Szilárd. That is, this boundary of the Milnor fiber determines the combinatorics of the arrangement. Furthermore, we give an explicit method which constructs the poset associated with the arrangement, given a plumbing graph in normal form for the boundary.</p>
+    </div>
+    </div>
+    </li>
+
     <li> <b>Connectedness and combinatorial interplay in the moduli space of line arrangements</b> (with B. Guerville-Ballé). <br>
 	<p class="sub"> (<i>Submitted</i>), <a href="https://arxiv.org/abs/2309.00322" target="_blank"> arXiv:2309.00322 <img src="pictures/pdf-icon.png" height=16px title="ArXiv" alt="ArXiv"></a>. </p>
     <div class="text_container">
@@ -230,7 +244,7 @@ window.addEvent('load', function() {
 
         <li> Examinators: <a href="http://www.ihes.fr/~cartier/" target="_blank"> Pierre Cartier</a>, <a href="http://webusers.imj-prg.fr/~michel.waldschmidt/index2.html" target="_blank"> Michel Waldschmidt</a>, <a href="http://homepages.warwick.ac.uk/~masbm/" target="_blank"> David Mond</a>, <a href="http://www.unilim.fr/pages_perso/jacques-arthur.weil/" target="_blank"> Jacques-Arthur Weil</a> and <a href="http://web.univ-pau.fr/~jvalles/" target="_blank"> Jean Vallès</a>.</li>
     </ul>  </li>
-</u1></div><br><br><br>
+</ul></div><br><br><br>
 
 
 
