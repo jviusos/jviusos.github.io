@@ -60,15 +60,13 @@ a {
 
 /* Lists */
 ol {
-  counter-reset: o-counter 10;
   list-style: none;
   margin: 0 0 0 40px;
   padding: 0 20px;
 }
 
 ol li:before {
-  content: '[' counter(o-counter) ']';
-  counter-increment: o-counter -1;
+  content: '[' counter(list-item) ']';
   position: absolute;
   font-weight: bold;
   text-indent: -30px;
